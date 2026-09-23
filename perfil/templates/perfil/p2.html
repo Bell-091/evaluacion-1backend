@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Perfil 2 - Sonic{% endblock %}
+
+{% block content %}
+<h1>Información de Usuario</h1>
+{# Si tienes una imagen de sonic en static/images/ o static/css/images/ #}
+{# <img src="{% static 'images/sonic_perfil_image.svg' %}" alt="Perfil 2" width="100" height="100"> #}
+<img src="{% static 'images/sonic_perfil_image.svg' %}" alt="Perfil 2" width="100" height="100">
+<p><strong>Nombre:</strong> {{ nombre }}</p>
+<p><strong>Año:</strong> {{ año }}</p>
+<p><strong>Correo:</strong> {{ correo }}</p>
+
+<hr>
+{# Enlace para volver al perfil 1 usando {% url %} #}
+<a href="{% url 'p1' %}">&larr; Ver Perfil 1 (Mario)</a>
+{% endblock %}

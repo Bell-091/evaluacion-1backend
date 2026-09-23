@@ -1,5 +1,5 @@
 """
-URL configuration for config_proytecto project.
+URL configuration for config_proyecto project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.1/topics/http/urls/
@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('productos/', include('app_productos.urls')),
     path('usuarios/', include('app_usuarios.urls')),
+    path('perfil/', include('perfil.urls')),
 ]
